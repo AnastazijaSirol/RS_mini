@@ -121,3 +121,14 @@ Svaka se funkcija pokreće zasebno:
 - potvrda prekoračenja brzine na temelju ukupnog vremena putovanja
 
 ```python cli.py fast-travel```
+
+## 5. .exe paket
+
+Projekt sadrži i samostalni .exe paket izrađen pomoću PyInstaller-a.
+Ovaj paket omogućuje pokretanje cijelog sustava bez instaliranog Pythona i bez instalacije ovisnosti.
+
+U virtualnom okruženju pokrenuti naredbu: 
+
+```pyinstaller --onefile main.py```
+
+Nakon pokretanja naredbe, izvršna datoteka nalazi se u ```dist/main.exe```
