@@ -81,40 +81,33 @@ CLI radi direktno nad SQLite bazom.
 
 ## 3. Instalacija i priprema okruženja
 
-### Koliranje projekta
-```git clone <repo_url>
-cd <repo_folder>
-```
+### Kloniranje projekta
+```git clone <repo_url>```
+```cd <repo_folder>```
+
 
 ### Kreiranje virtualnog okruženja
-```python -m venv venv
-venv\Scripts\activate
-```
+```python -m venv venv```
+```venv\Scripts\activate```
 
 ### Instalacija ovisnosti
-```pip install -r requirements.txt
-```
+```pip install -r requirements.txt```
 
 ## 4. Pokretanje sustava naredbom
-```python main.py
-```
+```python main.py```
 
 ## Korištenje CLI sučelja
 Svaka se funkcija pokreće zasebno: 
 
 - broj vozila na određenom ulazu/izlazu
-```python cli.py count-entrances PULA-ENTRANCE
-python cli.py count-exits RIJEKA-EXIT
-```
+```python cli.py count-entrances PULA-ENTRANCE```
+```python cli.py count-exits RIJEKA-EXIT```
 
 - broj vozila koja su prekoračila brzinu pored određene kamere
-```python cli.py speeding camera1
-```
+```python cli.py speeding camera1```
 
 - prosječno provedeno vrijeme na određenom odmorištu
-```python cli.py avg-rest RESTAREA1
-```
+```python cli.py avg-rest RESTAREA1```
 
 - potvrda prekoračenja brzine na temelju ukupnog vremena putovanja
-```python cli.py fast-travel
-```
+```python cli.py fast-travel```
