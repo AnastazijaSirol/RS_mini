@@ -83,11 +83,12 @@ CLI radi direktno nad SQLite bazom.
 
 ### Kloniranje projekta
 ```git clone <repo_url>```
-```cd <repo_folder>```
 
+```cd <repo_folder>```
 
 ### Kreiranje virtualnog okruženja
 ```python -m venv venv```
+
 ```venv\Scripts\activate```
 
 ### Instalacija ovisnosti
@@ -101,6 +102,7 @@ Svaka se funkcija pokreće zasebno:
 
 - broj vozila na određenom ulazu/izlazu
 ```python cli.py count-entrances PULA-ENTRANCE```
+
 ```python cli.py count-exits RIJEKA-EXIT```
 
 - broj vozila koja su prekoračila brzinu pored određene kamere
