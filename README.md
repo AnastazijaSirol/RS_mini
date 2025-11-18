@@ -81,6 +81,8 @@ CLI radi direktno nad SQLite bazom.
 
 ## 3. Instalacija i priprema okruženja
 
+Priloženi kod potrebno je pisati u Command Prompt-u.  
+
 ### Kloniranje projekta
 
 ```git clone <repo_url>```
@@ -108,7 +110,7 @@ Svaka se funkcija pokreće zasebno:
 
 ```python cli.py count-entrances PULA-ENTRANCE```
 
-```python cli.py count-exits RIJEKA-EXIT```
+```python cli.py count-exits PULA-EXIT```
 
 - broj vozila koja su prekoračila brzinu pored određene kamere
 
@@ -124,11 +126,14 @@ Svaka se funkcija pokreće zasebno:
 
 ## 5. .exe paket
 
-Projekt sadrži i samostalni .exe paket izrađen pomoću PyInstaller-a.
-Ovaj paket omogućuje pokretanje cijelog sustava bez instaliranog Pythona i bez instalacije ovisnosti.
+Projekt sadrži i dva samostalna .exe paketa izrađena pomoću PyInstaller-a.
+Ovi paketi omogućuju pokretanje cijelog sustava bez instaliranog Pythona i bez instalacije ovisnosti.
 
-U virtualnom okruženju pokrenuti naredbu: 
+U virtualnom okruženju pokrenute su naredbe: 
 
 ```pyinstaller --onefile main.py```
+```pyinstaller --onefile cli.py```
 
-Nakon pokretanja naredbe, izvršna datoteka nalazi se u ```dist/main.exe```
+Nakon pokretanja naredbi, izvršne datoteke nalaze se u ```dist``` folderu. 
+
+Pokreću se dvoklikom na .exe pakete. 

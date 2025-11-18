@@ -118,6 +118,44 @@ def fast_travel():
             f": {f['actual_minutes']} min (očekivano {f['expected_minutes']} min)"
         )
 
+@app.command()
+def menu():
+    while True:
+        typer.echo("\nMENU\n")
+        typer.echo("1. Broj vozila na ulazu")
+        typer.echo("2. Broj vozila na izlazu")
+        typer.echo("3. Prekoračenja brzine")
+        typer.echo("4. Prosječno vrijeme na odmorištima")
+        typer.echo("5. Prekoračenje brzine")
+        typer.echo("0. Izlaz")
+
+        choice = typer.prompt("Odaberi opciju")
+
+        if choice == "0":
+            typer.echo("Izlaz")
+            break
+
+        elif choice == "1":
+            cam = typer.prompt("Ulaz (PULA-ENTRANCE, RIJEKA-ENTRANCE, UMAG-ENTRANCE)")
+            count_entrances(cam)
+
+        elif choice == "2":
+            cam = typer.prompt("Izlaz (PULA-EXIT, RIJEKA-EXIT, UMAG-EXIT)")
+            count_exits(cam)
+
+        elif choice == "3":
+            cam = typer.prompt("Kamera (CAMERA1 / CAMERA2)")
+            speeding(cam)
+
+        elif choice == "4":
+            rest = typer.prompt("Restarea (RESTAREA1 / RESTAREA2)")
+            avg_rest(rest)
+
+        elif choice == "5":
+            fast_travel()
+
+        else:
+            typer.echo("Netočan odabir")
 
 if __name__ == "__main__":
     app()
