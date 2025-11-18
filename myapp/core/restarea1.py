@@ -1,4 +1,3 @@
-# myapp/core/restarea1.py
 import asyncio
 import random
 from datetime import datetime, timedelta
@@ -31,8 +30,6 @@ async def run_restarea1_simulation():
     while True:
         entrances = get_entrances_by_id(PULA_ENTRANCE_ID)
         exits = get_exits_by_id(PULA_EXIT_ID)
-
-        stops = []
 
         for vehicle in entrances:
             vehicle_id = vehicle["vehicle_id"]

@@ -38,9 +38,11 @@ def calculate_total_travel_time(vehicle_id):
 
 ROUTE_AVERAGES = {
     ("PULA-ENTRANCE", "RIJEKA-EXIT"): 90,
-    ("UMAG-ENTRANCE", "RIJEKA-EXIT"): 70,
     ("PULA-ENTRANCE", "UMAG-EXIT"): 60,
+    ("UMAG-ENTRANCE", "RIJEKA-EXIT"): 70,
+    ("UMAG-ENTRANCE", "PULA-EXIT"): 60,
     ("RIJEKA-ENTRANCE", "UMAG-EXIT"): 70,
+    ("RIJEKA-ENTRANCE", "PULA-EXIT"): 90,
 }
 
 def detect_fast_vehicle(record):

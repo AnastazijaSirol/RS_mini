@@ -137,4 +137,4 @@ U virtualnom okruženju pokrenute su naredbe:
 
 Nakon pokretanja naredbi, izvršne datoteke nalaze se u ```dist``` folderu. 
 
-Pokreću se dvoklikom na .exe pakete. 
+main.exe paket pokreće se dvolikom kao samostalna aplikacija, a cli.exe paket pokreće se iz terminala naredbom ```cli.exe menu``` (terminal mora biti otvoren u direktoriju gdje se nalazi izvršna datoteka)
