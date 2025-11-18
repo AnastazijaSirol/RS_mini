@@ -132,6 +132,7 @@ Ovi paketi omogućuju pokretanje cijelog sustava bez instaliranog Pythona i bez 
 U virtualnom okruženju pokrenute su naredbe: 
 
 ```pyinstaller --onefile main.py```
+
 ```pyinstaller --onefile cli.py```
 
 Nakon pokretanja naredbi, izvršne datoteke nalaze se u ```dist``` folderu. 
